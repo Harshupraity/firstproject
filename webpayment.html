@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="style" href="style.css">
+    <style>
+        *{
+    box-sizing: border-box
+}
+
+body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin:   15px 30px;
+        font-size: 15px;
+        padding: 15px;
+}
+
+.container{
+    background-color: rgb(174, 230, 211);
+    padding: 15px;
+    border: black;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select,
+textarea{
+    width: 100%;
+    padding: 12px;
+    margin: 5px;
+}
+
+fieldset {
+    background-color: rgb(216, 210, 210);
+    border: 1px solid black;
+}
+
+.main_heading
+{
+    text-align: center;
+
+}
+
+input[type="submit"]{
+    background-color: rgb(179, 179, 247);
+    padding: 12px 20px;
+    Border: none;
+    cursor: pointer;
+    width: 100%;
+}
+input[type="submit"]:hover{
+    background-color: green;
+}
+
+</style>
+
+</head>
+<body>
+    <div class="container">
+    <h1 class="main_heading">PAYMENT FORM</h1>
+    <h2>User Details</h2>
+  <p>Name : *<input type="text", name= " " required></p>
+  <fieldset>
+    <legend>Gender</legend> 
+        <p>Male : <input type="radio", name=" "> Female : <input type = "radio" name=" "></p>
+   </fieldset>
+   <p>Address : <textarea name = "name" id="name" cols="90" rows="10" required></textarea></p>
+   <p>Email : <input type="name", name=" "></p>
+    <p>Pincode : * <input type = "name", name=" "></p>
+    PAYMENT DETAILS
+   <p> Card type : <select>
+                <option>--Select Card Type--</option>
+                <option>Master Card</option>
+                <option>Visa</option>
+                <option>Rupay</option>
+                </select>
+                </p>
+    <p>CVV no.  :  <input type = "password", name=" "></p>
+    <p> Exp Date : <input type = "date" name = " "></p>
+    <input type = "Submit" Value = "Pay Now">
+    
+</div>  
+</body>
+</html>
